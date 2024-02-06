@@ -1,0 +1,30 @@
+---
+import ExperienceItem from "./ExperienceItem.astro";
+const EXPERIENCIE = [
+  {
+    date: "Actualmente...",
+    title: "Programador FullStack Jr.",
+    company: "Cuenta Propia",
+    description:
+      "Diferentes proyectos por cuenta propia para pequeñas empresas.",
+  },
+  {
+    date: "Junio 2023",
+    title: "Programador FullStack Jr.",
+    company: "Gateaway Tic SL",
+    description:
+      "Tuve la experiencia de trabajar en un proyecto inmobiliario y de marketing donde fui responsable de diseñar y maquetar el proyecto para producción. Como parte de este proyecto, migré con éxito un proyecto de React a JQuery en Visual Studio e integré la API de Figma. Uno de los aspectos más destacados fue realizar una conversión perfecta de JSON a XML de la API de Figma, que almacené en un diccionario y utilicé en DevExpress.",
+    link: "https://www.linkedin.com/in/ignacio-cabrera-hdez/",
+  },
+];
+---
+
+<ol class="relative mt-16">
+  {
+    EXPERIENCIE.map((experiencie) => (
+      <li class="">
+        <ExperienceItem {...experiencie} />
+      </li>
+    ))
+  }
+</ol>
