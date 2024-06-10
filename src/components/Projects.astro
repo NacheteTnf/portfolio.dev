@@ -1,17 +1,12 @@
 ---
 import GitHub from "./icons/GitHub.astro";
-import NextJS from "./icons/NextJS.astro";
 import React from "./icons/React.astro";
 import Tailwind from "./icons/Tailwind.astro";
 import Link from "./icons/Link.astro";
 import LinkButton from "./LinkButton.astro";
+import IA from "./icons/IA.astro";
 
 const TAGS = {
-  NEXT: {
-    name: "Next.js",
-    class: "bg-black text-white",
-    icon: NextJS,
-  },
   TAILWIND: {
     name: "Tailwind CSS",
     class: "bg-[#003159] text-white",
@@ -22,6 +17,11 @@ const TAGS = {
     class: "bg-black text-white",
     icon: React,
   },
+  IA: {
+    name: "AI",
+    class: "bg-black text-white",
+    icon: IA,
+  },
 };
 const PROJECTS = [
   {
@@ -31,7 +31,16 @@ const PROJECTS = [
     link: "https://imaginify-ai-mu.vercel.app/",
     github: "https://github.com/NacheteTnf/imaginifyAI",
     image: "/projects/imaginifyAI.webp",
-    tags: [TAGS.REACT, TAGS.TAILWIND, TAGS.NEXT],
+    tags: [TAGS.REACT, TAGS.TAILWIND, TAGS.IA],
+  },
+  {
+    title: "LinkSenseIA - Resumidor web usando la IA",
+    description:
+      "Herramienta web usando la IA que te resume los articulos de la web que desees. Creado con React.js, Redux, RapidAPI y Tailwind CSS.",
+    link: "https://linksense.netlify.app",
+    github: "https://github.com/NacheteTnf",
+    image: "/projects/linkSense.webp",
+    tags: [TAGS.REACT, TAGS.TAILWIND, TAGS.IA],
   },
   {
     title: "Gericht - Pagina web de un restaurante usando una interfaz bonita",
@@ -40,6 +49,15 @@ const PROJECTS = [
     link: "https://restaurant-gerichts.netlify.app/",
     github: "https://github.com/NacheteTnf/Gericht-restaurant",
     image: "/projects/gericht.webp",
+    tags: [TAGS.REACT, TAGS.TAILWIND],
+  },
+  {
+    title: "MeeTwo - Clone de Zoom para videollamadas con autentificacion  ",
+    description:
+      "Pagina web donde podras hacer videollamadas, programarlas y grabarlas ademas de poder reproducir las grabaciones. Con autentificacion hecha con Clerk!. Creado desde cero con Next.js, React, Tailwind CSS, Shadcn y Clerk.",
+    link: "https://zoom-clone-nextjs-two.vercel.app/",
+    github: "https://github.com/NacheteTnf/zoom_clone_Nextjs",
+    image: "/projects/MeeTwo.webp",
     tags: [TAGS.REACT, TAGS.TAILWIND],
   },
   {
@@ -59,7 +77,7 @@ const PROJECTS = [
     link: "https://car-hub-iota-puce.vercel.app/",
     github: "https://github.com/NacheteTnf/car_hub",
     image: "/projects/carhub.webp",
-    tags: [TAGS.NEXT, TAGS.TAILWIND],
+    tags: [TAGS.REACT, TAGS.TAILWIND],
   },
 ];
 ---
